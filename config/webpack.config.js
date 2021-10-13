@@ -670,19 +670,19 @@ module.exports = function (webpackEnv) {
       new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/),
       // Generate a service worker script that will precache, and keep up to date,
       // the HTML & assets that are part of the webpack build.
-      isEnvProduction &&
+      // isEnvProduction &&
         // fs.existsSync(swSrc) &&
-        new WorkboxWebpackPlugin.InjectManifest({
-          swSrc: path.join(process.cwd(), 'public/service-worker.js'),
-      swDest: path.join(process.cwd(), 'src/serviceWorker.js'),
-      exclude: [
-        /\.map$/,
-        /manifest$/,
-        /\.htaccess$/,
-        /service-worker\.js$/,
-        /serviceWorker\.js$/,
-      ],
-        }),
+      // new WorkboxWebpackPlugin.InjectManifest({
+      // swSrc: path.join(process.cwd(), '/src/serviceWorker.js'),
+      // swDest: path.join(process.cwd(), '/public/service-worker.js'),
+      // exclude: [
+      //   /\.map$/,
+      //   /manifest$/,
+      //   /\.htaccess$/,
+      //   /service-worker\.js$/,
+      //   /serviceWorker\.js$/,
+      // ],
+      //   }),
       // TypeScript type checking
       useTypeScript &&
         new ForkTsCheckerWebpackPlugin({
