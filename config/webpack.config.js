@@ -671,7 +671,7 @@ module.exports = function (webpackEnv) {
       // Generate a service worker script that will precache, and keep up to date,
       // the HTML & assets that are part of the webpack build.
       isEnvProduction &&
-        fs.existsSync(swSrc) &&
+        // fs.existsSync(swSrc) &&
         new WorkboxWebpackPlugin.InjectManifest({
           swSrc: path.join(process.cwd(), 'public/service-worker.js'),
       swDest: path.join(process.cwd(), 'src/serviceWorker.js'),
