@@ -673,17 +673,15 @@ module.exports = function (webpackEnv) {
       isEnvProduction &&
         fs.existsSync(swSrc) &&
         new WorkboxWebpackPlugin.InjectManifest({
-          swSrc,
-          dontCacheBustURLsMatching: /\.[0-9a-f]{8}\./,
-          exclude: [/\.map$/, /asset-manifest\.json$/, /LICENSE/, /manifest$/,
-            /\.htaccess$/,
-            /service-worker\.js$/,
-            /sw\.js$/,],
-          swDest: 'service-worker.js',
-          // Bump up the default maximum size (2mb) that's precached,
-          // to make lazy-loading failure scenarios less likely.
-          // See https://github.com/cra-template/pwa/issues/13#issuecomment-722667270
-          maximumFileSizeToCacheInBytes: 5 * 1024 * 1024,
+          swSrc: path.join(process.cwd(), 'public/service-worker.js'),
+      swDest: 'serviceWorker.js',
+      exclude: [
+        /\.map$/,
+        /manifest$/,
+        /\.htaccess$/,
+        /service-worker\.js$/,
+        /serviceWorker\.js$/,
+      ],
         }),
       // TypeScript type checking
       useTypeScript &&
