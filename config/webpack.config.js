@@ -674,7 +674,7 @@ module.exports = function (webpackEnv) {
         fs.existsSync(swSrc) &&
         new WorkboxWebpackPlugin.InjectManifest({
           swSrc: path.join(process.cwd(), 'public/service-worker.js'),
-      swDest: path.join(process.cwd(), 'public/service-worker.js'),
+      swDest: path.join(process.cwd(), 'src/serviceWorker.js'),
       exclude: [
         /\.map$/,
         /manifest$/,
