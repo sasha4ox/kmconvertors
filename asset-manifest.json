@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/kmconvertors/static/css/main.1f0d72ed.chunk.css",
+    "main.js": "/kmconvertors/static/js/main.bc27226d.chunk.js",
+    "main.js.map": "/kmconvertors/static/js/main.bc27226d.chunk.js.map",
+    "runtime-main.js": "/kmconvertors/static/js/runtime-main.958ae154.js",
+    "runtime-main.js.map": "/kmconvertors/static/js/runtime-main.958ae154.js.map",
+    "static/js/2.38ab69b2.chunk.js": "/kmconvertors/static/js/2.38ab69b2.chunk.js",
+    "static/js/2.38ab69b2.chunk.js.map": "/kmconvertors/static/js/2.38ab69b2.chunk.js.map",
+    "static/js/3.b1415372.chunk.js": "/kmconvertors/static/js/3.b1415372.chunk.js",
+    "static/js/3.b1415372.chunk.js.map": "/kmconvertors/static/js/3.b1415372.chunk.js.map",
+    "index.html": "/kmconvertors/index.html",
+    "static/css/main.1f0d72ed.chunk.css.map": "/kmconvertors/static/css/main.1f0d72ed.chunk.css.map",
+    "static/js/2.38ab69b2.chunk.js.LICENSE.txt": "/kmconvertors/static/js/2.38ab69b2.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.958ae154.js",
+    "static/js/2.38ab69b2.chunk.js",
+    "static/css/main.1f0d72ed.chunk.css",
+    "static/js/main.bc27226d.chunk.js"
+  ]
+}
